@@ -26,3 +26,37 @@ Print the greatest common number between the two numbers.
 Last function called main invokes all the functions
 
 """
+
+"""
+pseudocode
+# fahrenheit_calculator()
+Far_num = input()
+Result = far_num - 32 / 1.8
+print(far_num)
+
+# eta()
+Distance = input()
+Speed = input()
+Time = distance / speed * 60
+print(time)
+
+#list_of_numbers()
+List[]
+I = 0
+While i <=3
+Iterate i 
+Append input()
+print(list)
+
+#greatest factor()
+First_num = input()
+Second_num = input()
+While second_num != 0
+Hold = second_num
+Second_num = first_num % second_num
+First_num = hold
+print(first_num)
+
+main()
+
+"""
