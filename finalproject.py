@@ -60,3 +60,50 @@ print(first_num)
 main()
 
 """
+
+
+#Converts farenheit to celcius.
+def farenheit_calculator(far_num):
+    far_num = input("Enter the farenheit you want to convert: ")
+    result = (int(far_num) - 32) / 1.8
+    print(far_num, "degrees converted to celcius is: ",result)
+ 
+
+#Calculates the estimated time of arrival by user entering speed and time.
+def eta():
+    distance = int(input("Enter the distance you are traveling: "))
+    speed = int(input("Enter your speed: "))
+    time = distance/speed * 60
+    print("You will arrive in" , time , "minutes.")
+ 
+
+ #Sorts numbers entered by user.
+def list_of_numbers():
+    char = []
+    i = 0
+    while i <= 3:
+        i += 1
+        char.append(input("Enter the numbers you want to sort: "))
+     
+    print(sorted(char))
+    
+   
+    
+ #Gets the greatest common factor of two numbers imputed by user.
+def greatest_factor():
+    first_num = int(input("Enter the first value: "))
+    second_num = int(input("Enter the second value: "))
+    while second_num != 0:
+        hold = second_num
+        second_num = first_num % second_num
+        first_num = hold
+        print("Greatest common divisor is: ", first_num)
+
+
+def main():
+    farenheit_calculator(5)
+    eta()
+    list_of_numbers()
+    greatest_factor()
+
+main()    
